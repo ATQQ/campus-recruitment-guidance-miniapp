@@ -1,0 +1,101 @@
+{
+	"pages": [
+		// {
+		// 	"path":"pages/login/index"
+		// },
+		{
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/notice/index"
+		},
+		{
+			"path": "pages/about/index"
+		},
+		{
+			"path": "pages/ourselves/index"
+		},
+		{
+			"path":"pages/list/index"
+		},			
+		{
+			"path":"pages/neitui/index"
+		},
+		{
+			"path":"pages/mine/index"
+		},
+		{
+			"path":"pages/help/index"
+		},
+		{
+			"path":"pages/search/index"
+		},
+		{
+			"path":"pages/publish/index"
+		},
+		{
+			"path":"pages/detail/index"
+		},
+		{
+			"path":"pages/neisearch/index"
+		},
+		{
+			"path":"pages/neiDetail/index"
+		},
+		{
+			"path":"pages/apply/index"
+		},
+		{
+			"path":"pages/renCard/index"
+		},
+		{
+			"path":"pages/permsg/index"
+		},
+		{
+			"path":"pages/fankui/index"
+		},
+		{
+			"path":"pages/fanDetail/index"
+		},
+		{
+			"path":"pages/morenotice/index"
+		}
+	],
+	"tabBar":{
+		"color":"#000",
+		"selectedColor":"#fa8c15",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"text":"柚动态",
+				"iconPath":"static/tabbar/don.png",
+				"selectedIconPath":"static/tabbar/don_cur.png"
+			},
+			{
+				"pagePath":"pages/neitui/index",
+				"text":"柚内推",
+				"iconPath":"static/tabbar/nei.png",
+				"selectedIconPath":"static/tabbar/nei_cur.png"
+			},
+			{
+				"pagePath":"pages/help/index",
+				"text":"柚子帮",
+				"iconPath":"static/tabbar/help.png",
+				"selectedIconPath":"static/tabbar/help_cur.png"
+			},
+			{
+				"pagePath":"pages/mine/index",
+				"text":"我的",
+				"iconPath":"static/tabbar/my.png",
+				"selectedIconPath":"static/tabbar/my_cur.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		// "navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
