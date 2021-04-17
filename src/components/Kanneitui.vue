@@ -7,7 +7,7 @@
                 <text class="cuIcon-search"></text>
                 <input @focus="InputFocus" @blur="InputBlur" :adjust-position="false" type="text" 
                     placeholder="搜索感兴趣的公司或者职业标签" confirm-type="search"></input>
-                <button class="cu-btn bg-yellow shadow-blur round">搜索</button>
+                <button class="cu-btn bg-orange shadow-blur round">搜索</button>
             </view>
         </view>
         <!-- 轮播图 -->

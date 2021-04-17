@@ -18,13 +18,13 @@
                 </view>
                 <text>个人信息管理</text>
             </view>
-            <view class="myline">
+            <view class="myline" @tap="toGong">
                 <view class="func-item">
                     <text class="cuIcon-friend myicon"></text>
                 </view>
                 <text>功能管理</text>
             </view>
-            <view class="myline">
+            <view class="myline" @tap="toContent">
                 <view class="func-item">
                     <text class="cuIcon-friend myicon"></text>
                 </view>
@@ -33,31 +33,31 @@
         </view>
 
         <view class="cu-list menu sm-border card-menu margin-top" >
-                <view class="cu-item arrow">
-					<button class="cu-btn content">
-						<text class="cuIcon-btn text-olive"></text>
-						<text class="text-grey">万能客服</text>
-					</button>
-				</view>
-                <view class="cu-item arrow">
-					<button class="cu-btn content" @tap="toFankui">
-						<text class="cuIcon-btn text-olive"></text>
-						<text class="text-grey">产品反馈</text>
-					</button>
-				</view>
-                <view class="cu-item arrow">
-					<button class="cu-btn content" @tap="toAbout">
-						<text class="cuIcon-btn text-olive"></text>
-						<text class="text-grey">关于产品</text>
-					</button>
-				</view>
-                <view class="cu-item arrow">
-					<button class="cu-btn content" @tap="toAddur">
-						<text class="cuIcon-btn text-olive"></text>
-						<text class="text-grey">加入我们</text>
-					</button>
-				</view>
-			</view>
+            <view class="cu-item arrow">
+                <button class="cu-btn content">
+                    <text class="cuIcon-btn text-olive"></text>
+                    <text class="text-grey">万能客服</text>
+                </button>
+            </view>
+            <view class="cu-item arrow">
+                <button class="cu-btn content" @tap="toFankui">
+                    <text class="cuIcon-btn text-olive"></text>
+                    <text class="text-grey">产品反馈</text>
+                </button>
+            </view>
+            <view class="cu-item arrow">
+                <button class="cu-btn content" @tap="toAbout">
+                    <text class="cuIcon-btn text-olive"></text>
+                    <text class="text-grey">关于产品</text>
+                </button>
+            </view>
+            <view class="cu-item arrow">
+                <button class="cu-btn content" @tap="toAddur">
+                    <text class="cuIcon-btn text-olive"></text>
+                    <text class="text-grey">加入我们</text>
+                </button>
+            </view>
+        </view>
 
     </view>
 </template>
@@ -76,6 +76,12 @@ export default {
         },
         toAddur(){
             uni.navigateTo({ url:'../ourselves/index'})
+        },
+        toGong(){
+            uni.navigateTo({ url:'../gong/index'})
+        },
+        toContent(){
+            uni.navigateTo({ url:'../content/index'});
         }
     }
 }

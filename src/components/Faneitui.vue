@@ -54,7 +54,7 @@
 			</checkbox-group>
 		</form>
 		<view class="padding flex flex-direction">
-			<button class="cu-btn bg-yellow lg">发布</button>
+			<button class="cu-btn bg-orange lg">发布</button>
 		</view>
 	</view>
 </template>

@@ -7,7 +7,9 @@
         <!-- 内推详情 -->
         <!-- 头像 -->
         <view class="topbg">
-            <view class="cu-avatar round my-avatar" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+            <view class="cu-avatar my-avatar">
+                <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg"></image>
+            </view>
         </view>
         <view class="neidetail">
             <view class="cu-list menu-avatar">
@@ -87,18 +89,24 @@ export default {
         }
     }
     .topbg{
-        height: 150px;
+        height: 100px;
         width: 100%;
         background: #fa8c15;
         position: relative;
         .my-avatar{
-            width: 50px;
-            height: 50px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             position:absolute;
-            bottom: -20px;
+            bottom: -40px;
             right: 40px;
             z-index: 99;
+            background: pink;
+            image{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
         }
     }
 </style>

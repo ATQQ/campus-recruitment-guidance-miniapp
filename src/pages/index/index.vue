@@ -52,7 +52,8 @@
 		
 		<!-- 动态卡片 -->
 		<view class="movecard">
-			<view class="cu-card dynamic" v-for="item in movecardList" :key="item.id">
+			<view class="cu-card dynamic" v-for="item in movecardList" :key="item.id"
+				@tap=tomovePage>
 				<view class="cu-item shadow">
 					<view class="cu-list menu-avatar">
 						<view class="cu-item">
@@ -63,10 +64,9 @@
 									{{item.company}}
 								</view>
 							</view>
-							<text class="cuIcon-moreandroid text-gray"  @tap="showModal" data-target="RadioModal"></text>
 						</view>
 					</view>
-					<view class="text-content" @tap=tomovePage>
+					<view class="text-content">
 						{{item.content}}
 					</view>
 					<view class="grid flex-sub padding-lr col-1">
@@ -124,7 +124,8 @@
 					{ id:2,username:'cc',content:'33333',company:'CC',tags:'#标签标签标签'},
 					{ id:3,username:'dd',content:'44444',company:'DD',tags:'#标签标签标签标签'}
 				],
-				modalName:null
+				modalName:null,
+				bottomName:null
 			}
 		},
 		components:{
@@ -145,7 +146,7 @@
 			},
 			getSwiperList(){},
 			showModal(e){
-				this.modalName = e.currentTarget.dataset.target
+				this.modalName = e.currentTarget.dataset.target;
 			},
 			tomovePage(){
 				uni.navigateTo({url:'../detail/index'})
@@ -155,7 +156,12 @@
 			},
 			toMoreNotice(){
 				uni.navigateTo({ url:'../morenotice/index'})
-			}
+			},
+			showBottom(e){
+				this.bottomName = e.currentTarget.dataset.target;
+			},
+			hideBottom(){},
+			bottomChange(){}
 		},
 		created(){
 			this.getSwiperList();

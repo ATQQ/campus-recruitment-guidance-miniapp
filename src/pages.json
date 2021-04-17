@@ -59,6 +59,15 @@
 		},
 		{
 			"path":"pages/morenotice/index"
+		},
+		{
+			"path":"pages/gong/index"
+		},
+		{
+			"path":"pages/content/index"
+		},
+		{
+			"path":"pages/dianzan/index"
 		}
 	],
 	"tabBar":{
