@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App'
-import Store from './vuex/index'
+import store from './store/index'
 import http from './utils/http'
 import api from './api/index'
 
@@ -17,6 +17,6 @@ App.mpType = 'app'
 
 const app = new Vue({
   ...App,
-  Store
+  store
 })
 app.$mount()

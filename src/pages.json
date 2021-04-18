@@ -1,8 +1,15 @@
 {
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 	"pages": [
 		// {
 		// 	"path":"pages/login/index"
 		// },
+		{
+			"path": "pages/demo/vuex/index",
+			"style": {
+			  "navigationBarTitleText": "vuex 使用示例"
+			}
+		},
 		{
 			"path": "pages/index/index"
 		},
