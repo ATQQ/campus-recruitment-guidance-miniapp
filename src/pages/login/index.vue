@@ -25,14 +25,11 @@ export default {
                     uni.getUserInfo({//获取用户信息
                         provider:'weixin',
                         success:(res)=>{
-                            let user = res.userInfo;
-                            that.$api.postUser({
-                                username:user.nickname,
-                                useravatar:user.avatarUrl
-                            })
-                            if(user){
-                                that.userInfo.name = user.nickname;
-                                that.userInfo.avatar = user.avatarUrl; 
+                            let { nickname, avatarUrl } = res.userInfo;
+                            that.$api.user.login(nickname,avatarUrl)
+                            if( nickname && avatarUrl ){
+                                that.userInfo.name = nickname;
+                                that.userInfo.avatar = avatarUrl; 
                                 that.getRequest();
                             }
                         }

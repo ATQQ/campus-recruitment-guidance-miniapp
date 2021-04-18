@@ -10,7 +10,7 @@
 * Vue.js -> 前端开发框架
 * Uni-app -> 快应用开发，快速生成 mp-weixin
 * ColorUI -> UI框架
-* axios -> 网络请求
+* [axios-miniprogram](https://github.com/fluffff/axios-miniprogram#readme) -> 网络请求
 * Vuex -> 状态管理
 
 ## 使用

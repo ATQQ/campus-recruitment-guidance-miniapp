@@ -3,8 +3,9 @@
     "types": [
       "uni-app",
       "html5plus",
-      "miniprogram-api-typings/types/lib.wx.api.d.ts",
-      "mini-types/types/api"
-    ]
+      "miniprogram-api-typings",
+      "mini-types"
+    ],
+    "allowJs": true
   }
 }
